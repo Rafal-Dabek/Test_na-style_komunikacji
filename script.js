@@ -128,3 +128,14 @@ function reset(id) {
   }
 
 } 
+
+
+function show_table()
+{
+  if (document.getElementById("result_table").style.display == "none")
+        document.getElementById("result_table").style.display="block";
+    else
+        document.getElementById("result_table").style.display="none";
+}
+
+

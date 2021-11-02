@@ -1160,18 +1160,104 @@
     <button type="button" onclick="done()"id="done">
         Gotowe
     </button>
- </div> 
+    
+</div> 
         
- <h3>
+    <h3>
      <b>Wyniki testu:</b>
-     <div id="disp" class="col-sm-12">
- </h3>
+     
+     <div id="disp" class="col-sm-12">    
 
-            
+    </h3>       
+
       <br>
     
 
-    </div>
+     </div>
+
+        <div>
+
+            <button type="button" onclick="show_table()" id="button_table">
+                Pokaż/Ukryj opis wyników
+            </button>
+
+            <table id="result_table">
+
+                <tr>
+                    <th>Nazwa stylu</th>
+                    <th>Charakterystyka</th>
+                    <th>Cechy pozytywne</th>
+                    <th>Cechy negatywne</th>
+                </tr>
+
+                <tr>
+                    <td><b>AGRESOR</b></td>
+                    <td>Rozmowa jest dla Ciebie rodzajem pojedynku, w którym starasz się wygrać. </td>
+                    <td>Jeżeli zajmujesz się czymś co trzeba robić samemu, agresywne podejście może zadziałać na Twoją korzyść.</td>
+                    <td>Możesz mieć problemy w zawodach wymagających pracy zespołowej. Wojowniczość często wywołuje u innych wycofanie się.</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><b>WSZYSTKO<br>-WIEDZĄCY</b></td>
+                    <td>Masz wyrobiony pogląd na wszystko i lubisz aby ostatnie słowo należało do Ciebie. Chętnie zabierasz głos.</td>
+                    <td>W sprawach na których się znasz, rozwiązujesz problemy ze zdumiewającą prędkością i pewnością siebie.<br> Masz dar przekonywania innych.</td>
+                    <td>Przymus aby zawsze mieć na wszystko odpowiedź może przeszkadzać w kontaktach z ludźmi.
+                         Możesz być odbierany jako osoba wywyższająca się. Ludzie odczuwają satysfakcję, gdy wszystkowiedzący myli się.
+                         Mówiąc „nie wiem”, „masz rację” pokazujesz swoją dojrzałość.</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><b>MALKONTENT</b></td>
+                    <td>Odczuwasz silne emocje, które rzadko wyrażasz w słowach. 
+                        Prawdopodobnie często zastanawiasz się dlaczego nikt nie rozumie co Cię gryzie.</td>
+                    <td>Ludzie źle czują się w towarzystwie malkontent, dlatego usiłują sprawić, aby poczuli się lepiej np. pocieszając ich.</td>
+                    <td>Zmienne nastroje sprawiają, ze ludzie unikają takich osób. Prawie nikt nie chciałby mieć malkontenta za szefa.</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><b>GADUŁA</b></td>
+                    <td>Kusi Cię aby każdą chwilę ciszy wypełnić słowami. Masz skłonność do osobistych wynurzeń.</td>
+                    <td>Jesteś osobą towarzyską, umiesz sprawić, aby inni czuli się w Twoim towarzystwie dobrze. Często jesteś osobą, która w towarzystwie pierwsza przełamuje lody.</td>
+                    <td>Ludzie, którzy ciągle mówią nie są traktowani poważnie.
+                        Gadulstwo nie zawsze idzie w parze z umiejętnością słuchania.
+                        </td>
+                    
+                </tr>
+
+                <tr>
+                    <td><b>MILCZEK</b></td>
+                    <td>Niechętnie mówisz o swoich słabościach wątpliwościach. W rezultacie ludzie odbierają Cię
+                        jako osobę godną zaufania.
+                        </td>
+                    <td>Przez otoczenie uważany jesteś za opokę. Ludzie w twoim towarzystwie czują się bezpiecznie.</td>
+                    <td>Tłumienie własnych uczuć może utrudniać zrozumienie ich u innych. Ludzie zaczną w końcu Cię traktować jako osobę silną, bo takie robisz wrażenie i oczekiwać od ciebie więcej niż jesteś w stanie zaoferować. Możesz mieć trudności w nawiązaniu intymnych relacji z innymi.
+                         Pozbawiając się możliwości spontanicznego reagowania stres, który paraliżuje Cię.</td>
+                    
+                </tr>
+
+
+                <tr>
+                    <td><b>DYPLOMATA</b></td>
+                    <td>Unikasz otwartego mówienia o pragnieniach i uczuciach. Jesteś uprzejmy, uważnie słuchasz.</td>
+                    <td>Rzadko złościsz się na ludzi i łatwo Ci nad nimi zapanować. Jesteś cierpliwy, dobrze radzisz sobie z sytuacjami konfliktowymi</td>
+                    <td>Twoje wolne tempo działania może irytować niektóre osoby. Pamiętaj, że w kontaktach z ludźmi ważna jest obustronna szczerość.</td>
+                    
+                </tr>
+
+
+
+
+
+            </table>
+
+        </div>
+
+     
+
+     
     
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

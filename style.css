@@ -110,7 +110,32 @@ input[type=radio] {
 }
 
 
-button{
-    margin-left: 50px;
+
+#button_table
+{
+    width: 300px;
+    background-color: green;
+
 }
+
+#result_table
+{
+    border: 5px solid green;
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: lightyellow;
+    font-size: 20px;
+    text-align:unset;
+    display:none;
+}
+
+td, th
+{
+    border: 3px solid green;
+    border-collapse: collapse;
+}
+
+
+
 
