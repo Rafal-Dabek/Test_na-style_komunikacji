@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" ></script>
+    <title>Formularz</title>
+</head>
+<body>
+
+    
+<div class="container"> 
+    <h1>
+        TEST STYLÓW COACHINGU
+    </h1>
+
+
+    <div class="col col-lg-12">
+
+        <P class="instrukcja">
+            <b>
+                Określ swoją reakcję w każdej sytuacji, przyznając trzy punkty odpowiedzi, którą
+                wybierzesz jako pierwszą, dwa tej, którą wybierzesz jako drugą i jeden tej, którą
+                wybierzesz jako ostatnią. 
+            </b> 
+        </P>
+        
+       <p class="pytanie">
+           <b>
+           <b>
+            1. Dwaj pracownicy w Twoim dziale nie mogą dojść ze sobą do porozumienia.
+            Jeden z nich poprosił Cię o interwencję. Mówisz:
+           </b> 
+           </b>
+       </p> 
+
+
+       <ol type="a">   
+            <li>Dlaczego mam się w to angażować? Musicie się porozumieć sami albo
+                przyjść do mnie razem  
+    
+                <form>
+    
+                    <input type="radio" name="Question" id="0_1_3" onclick="display(id)" class="A"
+                        value="3">3
+                        
+                    <input type="radio" name="Question" id="0_1_2" onclick="display(id)" class="A"
+                        value="2">2
+                      
+                    <input type="radio" name="Question" id="0_1_1" onclick="display(id)" class="A"
+                        value="1">1
+    
+                </form>
+                    
+                    
+            </li>
+
+        
+
+            <li>Porozmawiam z tym drugim pracownikiem (myśląc, że dowiesz się, jak
+            wygląda prawda, zanim sytuacja wymknie się spod kontroli)
+
+             <form>
+                <input type="radio" name="Question" id="0_2_3" onclick="display(id)" class="B"
+                value="3">3
+
+                <input type="radio" name="Question" id="0_2_2" onclick="display(id)" class="B"
+                value="2">2
+
+                <input type="radio" name="Question" id="0_2_1" onclick="display(id)" class="B"
+                value="1">1
+
+             </form>
+        
+                
+
+            </li>
+
+
+
+            <li>Czy możesz powiedzieć mi coś więcej? Może razem znajdziemy jakieś
+            rozwiązanie?
+        
+
+            <form>
+              
+                
+                <input type="radio" name="Question" id="0_3_3" onclick="display(id)" class="C"
+                value="3">3
+            
+                <input type="radio" name="Question" id="0_3_2" onclick="display(id)" class="C"
+                value="2">2
+            
+                <input type="radio" name="Question" id="0_3_1" onclick="display(id)" class="C"
+                value="1">1
+                
+              
+            
+            </form>
+                
+        
+            </li>
+      
+        </ol>
+
+        <button type="button" id="0" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+    
+
+    <div class="col col-12">
+        
+       <p class="pytanie">
+      <b>
+        2. Podczas spotkania z pracownikami jeden z nich zarzuca Ci, że Twoje działania
+        w roli przywódcy idą na marne i nie prowadzą do niczego. Po spotkaniu
+        mówisz:
+      </b>  
+
+
+       </p> 
+
+
+       <ol type="a">
+
+        <li>Pomówmy o tym na osobności
+            
+            <form>
+                <input type="radio" name="Question" id="1_1_3" onclick="display(id)" class="A"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="1_1_2" onclick="display(id)" class="A"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="1_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+        
+        
+        </li>
+
+
+        <li>Pozwól, że jeszcze raz ci wyjaśnię cele projektu  
+
+
+            <form>
+                <input type="radio" name="Question" id="1_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="1_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="1_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+
+        <li>Naprawdę zmartwiła mnie twoja wypowiedź. Co miałeś na myśli?
+            
+            <form>
+                <input type="radio" name="Question" id="1_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="1_3_2" onclick="display(id)" class="C"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="1_3_1" onclick="display(id)" class="C"
+                    value="1">1
+                  
+            </form>
+        
+        
+        </li>
+
+
+      </ol>
+
+        <button type="button" id="1" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+    
+    <div class="col col-12">
+        
+       <p class="pytanie">
+       <b>
+        3. Podczas prywatnej rozmowy z innym menedżerem dowiadujesz się, że jego
+        stanowisko pracy może zostać zlikwidowane. Mówisz:
+       </b> 
+       </p> 
+       <ol type="a">
+
+        <li>Zastanówmy się nad możliwymi rozwiązaniami, dobrze?
+            
+            <form>
+                <input type="radio" name="Question" id="2_1_3" onclick="display(id)" class="A"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="2_1_2" onclick="display(id)" class="A"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="2_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+        
+        </li>
+
+        <li>Nic, ale próbujesz uzyskać dodatkowe informacje 
+            
+            <form>
+                <input type="radio" name="Question" id="2_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="2_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="2_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+        
+        </li>
+
+
+        <li>Czy chcesz o tym porozmawiać?  
+
+            <form>
+                <input type="radio" name="Question" id="2_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                   
+                <input type="radio" name="Question" id="2_3_2" onclick="display(id)" class="C"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="2_3_1" onclick="display(id)" class="C"
+                    value="1">1
+              
+                
+            </form>
+
+
+        </li>
+
+      </ol>
+
+        <button type="button" id="2" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+
+ 
+    <div class="col col-12">
+        
+       <p class="pytanie">
+       <b>
+        4. W twoim dziale nastąpi likwidacja etatów. Zaplanowano spotkanie, aby to
+        ogłosił, ale drugi kierownik jest w związku z tym przerażony i może się nie
+        pojawić na tym spotkaniu. Mówisz: 
+       </b> 
+       </p> 
+       <ol type="a">
+
+
+        <li>Rozumiem, że nie obawiasz się przekazywania złych wiadomości, ale
+            wszyscy oczekują, że się pojawisz na spotkaniu. Zastanówmy się, jak
+            możemy zrobić to razem 
+
+
+            <form>
+                <input type="radio" name="Question" id="3_1_3" onclick="display(id)" class="A" 
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="3_1_2" onclick="display(id)" class="A" 
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="3_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+
+            
+        </li>
+
+
+        <li>Musisz przyjść na spotkanie. Pomyśl o reakcjach ludzi, jeżeli się nie
+            pojawisz  
+        
+            <form>
+                <input type="radio" name="Question" id="3_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="3_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="3_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+        
+        </li>
+
+
+        <li>Jak sądzisz, co możemy zrobić, aby było to łatwiejsze dla nas obu? 
+        
+        
+            <form>
+                <input type="radio" name="Question" id="3_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="3_3_2" onclick="display(id)" class="C"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="3_3_1" onclick="display(id)" class="C"
+                    value="1">1 
+              
+                
+            </form>
+        
+        </li>
+      </ol>
+    
+        <button type="button" id="3" onclick="reset(id)">
+            Reset
+        </button>
+
+    </div>
+
+
+    <div class="col col-12">
+        
+       <p class="pytanie">
+       <b>
+        5. Rozdzielasz obowiązki związane z pracą i stwierdzasz, że istnieje poważna
+        sprzeczność pomiędzy nimi a priorytetami w pracy pracownika z Twojego
+        zespołu. Mówisz: 
+       </b> 
+       </p> 
+       <ol type="a">
+
+        <li>Naprawdę szanuje twoje poglądy i uczucia dotyczące tej sprawy.
+            Porozmawiajmy o priorytetach 
+
+            <form>
+                <input type="radio" name="Question" id="4_1_3" onclick="display(id)" class="A" 
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="4_1_2" onclick="display(id)" class="A"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="4_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+        <li>Rozdzieliłem już prawie wszystkie zadania i nie mogę tego zmienić.
+            Musisz dokonać zmian dotyczących planowania pracy  
+        
+
+            <form>
+                <input type="radio" name="Question" id="4_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                   
+                <input type="radio" name="Question" id="4_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="4_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+        <li>Istnieje sposób na pogodzenie naszych celów. Zobaczmy, czy mamy
+            jakieś wspólne priorytety 
+
+            <form>
+                <input type="radio" name="Question" id="4_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="4_3_2" onclick="display(id)" class="C"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="4_3_1" onclick="display(id)" class="C"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+      </ol>
+
+        <button type="button" id="4" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+
+
+    <div class="col col-12">
+        
+       <p class="pytanie">
+       <b>
+        6. Twoja zwierzchniczka wzywa Cię do swojego biura i prosi o wyrażenie opinii
+        o pracowniku, który nie jest z twojego działu. Mówisz: 
+       </b>
+       </p> 
+       <ol type="a">
+
+        <li>Czy zanim wyrażę swoją opinię, możemy porozmawiać o
+            krótkookresowych i długookresowych celach?  
+        
+            <form>
+                <input type="radio" name="Question" id="5_1_3" onclick="display(id)" class="A"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="5_1_2" onclick="display(id)" class="A"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="5_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+        
+        </li>
+
+        <li>Rozmawia Pani z niewłaściwą osobą 
+            
+            <form>
+                <input type="radio" name="Question" id="5_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="5_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="5_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+        </li>
+
+        <li>Jestem naprawdę zadowolony, że sprawdza Pani naszych pracowników.
+            Myślę, że… 
+
+
+            <form>
+                <input type="radio" name="Question" id="5_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="5_3_2" onclick="display(id)" class="C"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="5_3_1" onclick="display(id)" class="C"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+      </ol>
+
+        <button type="button" id="5" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+
+    <div class="col col-12">
+        
+       <p class="pytanie">
+       <b>
+        7. Zbliża się termin zakończenia projektu koordynowanego przez jednego z
+        Twoich najbliższych kierowników odpowiedzialnych za współprace z
+        klientami. Starasz się dotrzymać terminu, ale pracownik jest zdenerwowany z
+        powodu problemów rodzinnych. Mówisz: 
+       </b>
+
+       </p> 
+       <ol type="a">
+
+        <li>Ten projekt trzeba skończyć na czas. Co możesz w tej sprawie zrobić? 
+            
+            <form>
+                <input type="radio" name="Question" id="6_1_3" onclick="display(id)" class="A"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="6_1_2" onclick="display(id)" class="A" 
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="6_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+
+        <li>Trzeba skończyć ten projekt – będziesz musiał zostawić swoje
+            problemy osobiste w domu. 
+
+            <form>
+                <input type="radio" name="Question" id="6_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="6_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="6_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+        <li>Można jeszcze zadzwonić do klienta i dowiedzieć się, czy można
+            przedłużyć termin oddania twojej części projektu 
+
+
+            <form>
+                <input type="radio" name="Question" id="6_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="6_3_2" onclick="display(id)" class="C"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="6_3_1" onclick="display(id)" class="C"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+
+      </ol>
+
+        <button type="button" id="6" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+
+    <div class="col col-12">
+        
+       <p class="pytanie">
+       <b>
+        8. Wszyscy z Twojego zespołu narzekają na prace jednej osoby. Podczas
+        spotkania całego zespołu prosisz o szczegółowe informacje na ten temat, ale
+        nikt nic nie mówi. Mówisz: 
+       </b> 
+       </p> 
+       <ol type="a">
+
+
+        <li>Musimy rozwiązać ten problem, więc zacznę, ale oczekuję, że reszta z
+            was również wypowie się na ten temat. 
+
+            <form>
+                <input type="radio" name="Question" id="7_1_3" onclick="display(id)" class="A"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="7_1_2" onclick="display(id)" class="A"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="7_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+
+        <li>To niedopuszczalne. Wiem, że pojawiły się problemy. Kto o tym
+            opowie? 
+
+            <form>
+                <input type="radio" name="Question" id="7_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="7_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="7_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+
+        <li>Jak widzę, nie ma żadnych problemów, z którymi nie moglibyście sobie
+            poradzić sami. Jeśli nikt nie chce nic dodać, przejdę do dalszej części
+            spotkania.
+
+
+            <form>
+                <input type="radio" name="Question" id="7_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="7_3_2" onclick="display(id)" class="C" 
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="7_3_1" onclick="display(id)" class="C"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+
+      </ol>
+
+        <button type="button" id="7" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+    
+ 
+    <div class="col col-12">
+        
+       <p class="pytanie">
+       <b>
+        9. Wydaje się, że przez kilka ostatnich tygodni pracownicy cięgle występowali
+        przeciwko jednej osobie. Jest ona atakowana na każdym spotkaniu. Mówisz do
+        tego pracownika: 
+       </b>        
+       </p> 
+       <ol type="a">
+
+        <li>Sądzę, że powinieneś wypracować pewną strategię, aby poradzić sobie
+            z tymi atakami
+
+            <form>
+                <input type="radio" name="Question" id="8_1_3" onclick="display(id)" class="A"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="8_1_2" onclick="display(id)" class="A"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="8_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+
+        </li>
+
+        <li>Dlaczego nic nie mówisz? Czego potrzebujesz? 
+        
+            <form>
+                <input type="radio" name="Question" id="8_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="8_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="8_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+        
+        </li>
+
+        <li>Nie musisz być celem ataków, jeśli nie chcesz. Na pewno czujesz się tak,
+            jakby ktoś cie atakował. Znajdziemy jakiś sposób, aby te się skończyły.   
+            
+            <form>
+                <input type="radio" name="Question" id="8_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="8_3_2" onclick="display(id)" class="C"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="8_3_1" onclick="display(id)" class="C"
+                    value="1">1
+              
+                
+            </form>
+            
+        </li>
+      </ol>
+
+        <button type="button" id="8" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+
+    <div class="col col-12">
+        
+       <p class="pytanie">
+           <b>
+            10. Prace nad projektami są znacznie opóźnione i podczas spotkania
+            poświęconego rozwiązywaniu problemów jeden z pracowników zaczyna
+            płakać. Mówisz:
+           </b>
+               
+       </p> 
+       <ol type="a">
+
+        <li>Zróbmy przerwę, myśląc, że możesz popracować z tą osobą, zyskując
+            tym samym nieco czasu na uspokojenie             
+        
+            <form>
+                <input type="radio" name="Question" id="9_1_3" onclick="display(id)" class="A" 
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="9_1_2" onclick="display(id)" class="A"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="9_1_1" onclick="display(id)" class="A"
+                    value="1">1
+              
+                
+            </form>
+        
+        </li>
+
+        <li>Rozumiem, że jesteś zdenerwowany
+        
+            <form>
+                <input type="radio" name="Question" id="9_2_3" onclick="display(id)" class="B"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="9_2_2" onclick="display(id)" class="B"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="9_2_1" onclick="display(id)" class="B"
+                    value="1">1
+              
+                
+            </form>
+        
+        </li>
+
+        <li>Przyjrzyjmy się temu problemowi i zobaczymy, w jaki sposób możemy
+            uporządkować ten bałagan  
+            
+            <form>
+                <input type="radio" name="Question" id="9_3_3" onclick="display(id)" class="C"
+                    value="3">3
+                  
+                <input type="radio" name="Question" id="9_3_2" onclick="display(id)" class="C"
+                    value="2">2
+                  
+                <input type="radio" name="Question" id="9_3_1" onclick="display(id)" class="C"
+                    value="1">1
+              
+                
+            </form>
+            
+        </li>
+
+      </ol>
+
+        <button type="button" id="9" onclick="reset(id)">
+            Reset
+        </button>
+    
+    </div>
+
+    
+</div> 
+   
+<div>
+    <button type="button" onclick="done()"id="done">
+        Gotowe
+    </button>
+ </div> 
+        
+ <h3>
+     <b>Wyniki testu:</b>
+     <div id="disp" class="col-sm-12">
+ </h3>
+
+            
+      <br>
+    
+
+    </div>
+    
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
