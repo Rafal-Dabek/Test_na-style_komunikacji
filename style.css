@@ -130,12 +130,23 @@ input[type=radio] {
     display:none;
 }
 
+#tabela_punkty
+{
+    background-color: white;
+    margin-left: 730px;
+    font-size: 23px;
+    display:block;
+}
+
 td, th
 {
     border: 3px solid green;
     border-collapse: collapse;
 }
 
-
+p
+{
+font-size: 20px;
+}
 
 
