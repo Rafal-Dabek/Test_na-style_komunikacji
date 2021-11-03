@@ -120,7 +120,7 @@ input[type=radio] {
 
 #result_table
 {
-    border: 5px solid green;
+    border: 5px solid orange;
     border-collapse: collapse;
     margin-left: 20px;
     margin-right: 20px;
@@ -140,7 +140,7 @@ input[type=radio] {
 
 td, th
 {
-    border: 3px solid green;
+    border: 3px solid orange;
     border-collapse: collapse;
 }
 
