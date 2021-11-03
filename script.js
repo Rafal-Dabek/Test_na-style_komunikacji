@@ -99,10 +99,13 @@ function reset(id) {
 
 function show_table()
 {
+  
   if (document.getElementById("result_table").style.display == "none")
         document.getElementById("result_table").style.display="block";
     else if(document.getElementById("result_table").style.display="block")
         document.getElementById("result_table").style.display="none";
+
+  
 }
 
 

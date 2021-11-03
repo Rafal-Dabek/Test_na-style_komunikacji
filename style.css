@@ -127,7 +127,7 @@ input[type=radio] {
     background-color: lightyellow;
     font-size: 20px;
     text-align:unset;
-    display:none;
+    display:block;
 }
 
 #tabela_punkty
@@ -148,5 +148,6 @@ p
 {
 font-size: 20px;
 }
+
 
 
