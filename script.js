@@ -39,7 +39,7 @@ function done(){
  
   
 
-  AGRESOR=parseInt(p[3])+parseInt(p[6])+parseInt(p[16])+parseInt(p[18])+parseInt(p[21])+parseInt(p[25])+parseInt(p[30]);
+  AGRESOR=parseInt(p[3])+parseInt(p[6])+parseInt(p[16])+parseInt(p[18])+parseInt(p[21])+parseInt(p[25])+parseInt(p[30])+parseInt(p[47]);
   WSZYSTKOWIEDZĄCY=parseInt(p[1])+parseInt(p[8])+parseInt(p[13])+parseInt(p[17])+parseInt(p[24])+parseInt(p[31])+parseInt(p[37])+parseInt(p[44]);
   MALKONTENT=parseInt(p[2])+parseInt(p[7])+parseInt(p[10])+parseInt(p[14])+parseInt(p[28])+parseInt(p[34])+parseInt(p[36])+parseInt(p[41]);
   GADUŁA=parseInt(p[4])+parseInt(p[20])+parseInt(p[23])+parseInt(p[27])+parseInt(p[29])+parseInt(p[33])+parseInt(p[43]) +parseInt(p[45]);
