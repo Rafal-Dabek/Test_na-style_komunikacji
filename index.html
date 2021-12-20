@@ -1157,7 +1157,7 @@
 </div> 
    
 <div>
-    <button type="button" onclick="done()"id="done">
+    <button type="button" onclick="done();show_table()"id="done">
         Gotowe
     </button>
     
@@ -1220,14 +1220,14 @@
 
         <div>
 
-            <button type="button" onclick="show_table()" id="button_table">
+            <button type="button" onclick="show_table()" id="button_table" >
                 Ukryj/Pokaż opis wyników
             </button>
 
 
             
 
-                <table id="result_table">
+                <table id="result_table" style="display : none">
 
                     <tr>
                         <th>Nazwa stylu</th>

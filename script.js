@@ -53,6 +53,15 @@ if(isNaN(AGRESOR) || isNaN(WSZYSTKOWIEDZĄCY) || isNaN(MALKONTENT)||isNaN(GADUŁ
 }
 if(!isNaN(document.getElementById("punkty_agresor").innerHTML))
 {
+
+  if (document.getElementById("result_table").style.display == "none"){
+    document.getElementById("result_table").style.display="block";
+  }
+  
+else if(document.getElementById("result_table").style.display="block"){
+  document.getElementById("result_table").style.display="none";
+}
+  
   document.getElementById("punkty_agresor").innerHTML
   +=  
   + AGRESOR + "<br>";
@@ -81,22 +90,9 @@ if(!isNaN(document.getElementById("punkty_agresor").innerHTML))
 }
 
 
-function reset(id) {
-
-  for(var k=1;k<4;k++){//czyszczenie
-    for(var l=1;l<4;l++){
-
-      document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).disabled = false;
-      document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).checked = false;
-      //document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).checked = false;
-
-      //document.getElementById("0_1_3").disabled = false;
-    }
-  }
-
-} 
 
 
+/*
 function show_table()
 {
   
@@ -106,6 +102,6 @@ function show_table()
         document.getElementById("result_table").style.display="none";
 
   
-}
+}*/
 
 
