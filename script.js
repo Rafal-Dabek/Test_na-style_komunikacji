@@ -46,8 +46,7 @@ function done(){
    MILCZEK=parseInt(p[0])+parseInt(p[9])+parseInt(p[15])+parseInt(p[22])+parseInt(p[32])+parseInt(p[35])+parseInt(p[39]) +parseInt(p[42]);
    DYPLOMATA=parseInt(p[5])+parseInt(p[11])+parseInt(p[12])+parseInt(p[19])+parseInt(p[26])+parseInt(p[38])+parseInt(p[40]) +parseInt(p[46]);
 
-console.log(DYPLOMATA)
-console.log(GADUŁA)
+
 if(isNaN(AGRESOR) || isNaN(WSZYSTKOWIEDZĄCY) || isNaN(MALKONTENT)||isNaN(GADUŁA)||isNaN( MILCZEK)||isNaN(DYPLOMATA))
 {
   alert ("Wszystkie pola muszą być uzupełnione!");
@@ -82,20 +81,7 @@ if(!isNaN(document.getElementById("punkty_agresor").innerHTML)&&(!(isNaN(AGRESOR
 }
 
 
-function reset(id) {
 
-  for(var k=1;k<4;k++){//czyszczenie
-    for(var l=1;l<4;l++){
-
-      document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).disabled = false;
-      document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).checked = false;
-      //document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).checked = false;
-
-      //document.getElementById("0_1_3").disabled = false;
-    }
-  }
-
-} 
 
 
 function show_table()
